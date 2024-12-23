@@ -2,5 +2,33 @@
 {% block title %} > Пользователи {% endblock %}
 {% block title_page %} Пользователи {% endblock %}
 {% block content %}
-
+<div class="table-responsive small">
+    <table class="table table-striped table-sm">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Фамилия</th>
+          <th scope="col">Имя</th>
+          <th scope="col">Отчество</th>
+          <th scope="col">Почта</th>
+          <th scope="col">Обновить\Удалить</th>
+        </tr>
+      </thead>
+      <tbody class="table-group-divider">
+        <tr>
+          <td>1</td>
+          <td>Садков</td>
+          <td>Максим</td>
+          <td>Николаевич</td>
+          <td>maksraptor543@gmail.com</td>
+          <td>
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic mixed styles example">
+                <a href="#" class="btn btn-warning">&#8634;</a>
+                <a href="#" class="btn btn-danger">X</a>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+</div>
 {% endblock %}
