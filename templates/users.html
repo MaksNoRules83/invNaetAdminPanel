@@ -1,6 +1,7 @@
 {% extends 'index.html' %}
 {% block title %} > Пользователи {% endblock %}
 {% block title_page %} Пользователи {% endblock %}
+{% block add %}#{% endblock %}
 {% block content %}
 <div class="table-responsive small">
     <table class="table table-striped table-sm">
@@ -11,6 +12,8 @@
           <th scope="col">Имя</th>
           <th scope="col">Отчество</th>
           <th scope="col">Почта</th>
+          <th scope="col">Должность</th>
+          <th scope="col">Роль</th>
           <th scope="col">Обновить\Удалить</th>
         </tr>
       </thead>
@@ -21,6 +24,8 @@
           <td>Максим</td>
           <td>Николаевич</td>
           <td>maksraptor543@gmail.com</td>
+          <td>Преподаватель</td>
+          <td>SuperAdmin</td>
           <td>
             <div class="btn-group btn-group-sm" role="group" aria-label="Basic mixed styles example">
                 <a href="#" class="btn btn-warning">&#8634;</a>

@@ -27,6 +27,10 @@ def cabinets():
 def profile():
     return render_template('profile.html')
 
+@app.route('/adminpanel/jobs')
+def jobs():
+    return render_template('jobs.html')
+
 
 if __name__ == "__main__":
     app.run()
